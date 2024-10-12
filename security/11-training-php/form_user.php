@@ -21,6 +21,9 @@ if (!empty($_GET['id'])) {
         if (hashId($t['id']) == $hashID) {
             $_id = $t['id'];
             $user = $userModel->findUserById($_id); //Update existing user
+            // $_name = $t['name'];
+            // $_mail = $t['email'];
+            
             break;
         }
     }
@@ -64,8 +67,10 @@ if (!empty($_POST['submit'])) {
 </head>
 
 <body>
+
     <?php include 'views/header.php' ?>
     <div class="container">
+  
 
         <?php if ($user || !isset($_id)) { ?>
             <div class="alert alert-warning" role="alert">
