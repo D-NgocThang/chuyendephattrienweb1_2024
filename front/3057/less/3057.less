@@ -1,0 +1,61 @@
+.type-3057 {
+    .content-body {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .card-item {
+        border: none;
+        margin: 10px;
+
+        .card-img {
+            border-radius: 0%;
+        }
+
+        .body-card {
+            padding-left: 0;
+            p{
+                font-size: 12px;
+                line-height: 25px;
+            }
+            .btn-title {
+                text-decoration: none;
+                color: black;
+            }
+
+            .card-title:hover {
+                color: red;
+            }
+
+            .btn-see {
+                position: absolute;
+                right: 0;
+                text-decoration: none;
+                color: rgb(0, 51, 102);
+                font-weight: 700;
+            }
+
+            .btn-see::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color: #000000;
+                transform-origin: bottom left;
+                transition: transform 0.25s linear;
+            }
+
+            .btn-see:hover::after {
+                transform: scaleX(1);
+            }
+
+            .post-meta .meta-item{
+                padding-right: 5px;
+            }
+
+        }
+    }
+}
