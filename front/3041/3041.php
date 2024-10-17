@@ -26,7 +26,7 @@ $less->compileFile('less/3041.less', 'css/3041.css');
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/3041.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./js//bootstrap.bundle.min.js"></script>
+    <script src="./js//bootstrap.min.js"></script>
 
 
 
